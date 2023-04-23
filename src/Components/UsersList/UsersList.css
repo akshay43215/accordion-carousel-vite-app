@@ -1,0 +1,27 @@
+.user-container {
+    background-color: rgb(58, 101, 87);
+    width: 25%;
+    margin: 10px 3px;
+    min-height: 300px;
+    color: rgb(15, 48, 47);
+    font-size: larger;
+    font-style: italic;
+    border: 1px solid;
+    border-radius:20px 20px;
+    
+}
+.header-part{
+    background-color: antiquewhite;
+    border-radius: 20px;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.user-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 10px; */
+    padding-top: 10px;
+}

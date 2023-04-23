@@ -1,0 +1,29 @@
+.accordion-container {
+    background-color: rgb(101, 107, 110);
+    width: 50%;
+    margin: 10px auto;
+}
+.accordion-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    background-color: rgb(69, 149, 122);
+    border: 2px solid black;
+}
+.accordion-title > h2 {
+    width: 520px;
+    color: rgb(244, 231, 231); 
+}
+.accordion-body > p {
+    color: rgb(179, 186, 193);
+    
+}
+.accordion-body {
+    min-height: 100px;
+}
+.accordion-body> p {
+    font-size: larger;
+    font-weight: 600;
+    padding: 20px 30px;
+}
