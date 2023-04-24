@@ -4,6 +4,7 @@ import axios from 'axios'
 import { useEffect, useState } from 'react'
 import './App.css'
 import { Accordion } from '../Accordion/Accordion'
+import Carousel ,{CarouselItem} from '../CarouselItm/Carousel'
 
 function App() {
   const [allUsers, setAllUsers] = useState([])
@@ -15,11 +16,6 @@ function App() {
     const newUsers=allUsers.filter(user => user.id!==pId )
     setAllUsers(newUsers  )
   }
-  const changeToggle = ()=>{
-    // alert('togggle app fn')
-    // setToggle(!toggle)
-    console.log('nothing');
-  }
 
   useEffect(() => {
     
@@ -27,8 +23,7 @@ function App() {
 
       try {
         const usersResponse = await axios.get('https://jsonplaceholder.typicode.com/users');
-        // const jsonResponse = await 
-        //console.log( response.data);
+    
         setAllUsers(usersResponse.data)
         const postsResponse = await axios.get('https://jsonplaceholder.typicode.com/posts')
         setAllPosts(postsResponse.data)
@@ -44,11 +39,18 @@ function App() {
     }
   }, [])
   
- // console.log(usersList);
+ 
 
   return (
    <div className="app-container">
-      
+    <div>
+    <Carousel>
+      <CarouselItem>One</CarouselItem>
+      <CarouselItem>Two</CarouselItem>
+      <CarouselItem>Three</CarouselItem>
+    </Carousel>
+
+    </div>
      <div className="users-container">
         {
           allUsers.map((user)=>

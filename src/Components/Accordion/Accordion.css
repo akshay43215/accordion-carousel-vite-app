@@ -1,5 +1,5 @@
 .accordion-container {
-    background-color: rgb(101, 107, 110);
+    background-color: rgb(178, 190, 196);
     width: 50%;
     margin: 10px auto;
 }
@@ -8,15 +8,16 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 30px;
-    background-color: rgb(69, 149, 122);
+    background-color: #FAFAFA;
+    color: rgb(135, 124, 124);
     border: 2px solid black;
 }
 .accordion-title > h2 {
     width: 520px;
-    color: rgb(244, 231, 231); 
+     
 }
 .accordion-body > p {
-    color: rgb(179, 186, 193);
+    color: rgb(235, 243, 251);
     
 }
 .accordion-body {

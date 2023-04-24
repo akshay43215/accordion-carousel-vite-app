@@ -7,7 +7,6 @@ export const UsersList= ({user,changeUsers})=> {
       const {name:cName, catchPhrase: cType , bs}=user.company
       // console.log(cName, cType , bs);
       const removeUser = (uId)=> {
-        // alert(`remove user is ${uId}`)
         changeUsers(uId)
       }
       return (
